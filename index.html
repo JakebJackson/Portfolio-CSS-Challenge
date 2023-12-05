@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard HTML Page Info with link to reset.css and stylesheet.css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Jakeb Jackson</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+</head>
+
+<body>
+    <!-- Creating the navigation bar (header) for the page. -->
+    <div class="header">
+        <h1>Jakeb Jackson</h1>
+        <div class="nav-menu-div">
+            <ul class="nav-menu-ul">
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- This div is used to cointain all the content of the page and various sections. -->
+    <div class="page-content">
+        <!-- These smaller divs are for the content, I put them into seperate child divs so that I can give the nav menu functionality and keep the CSS neat and organised -->
+        <div id="about-me">
+            <h2>About Me</h2>
+            <p>Hi! I'm Jakeb Jackson, an aspiring Web Developer who, at the time of writing, is going through the Monash University Web Development Bootcamp.</p>
+            <img src="./assets/images/Profile-Picture.jpg" alt="Image of myself at a garden in the phillipines" class="float-right"/>
+        </div>
+
+        <div id="work">
+            <h2>Work</h2>
+            <div class="main-image">
+                <a target="_blank" href="https://jakebjackson.github.io/Horiseon-Bugfix-Project/">
+                    <img src="./assets/images/" alt="Screenshot of Github Repository with link" class=""/>
+                    <!-- Using these divs inside of the anchor tag so that I can create call cards with a name and description on the images of my projects.-->
+                    <div class="work-desc-cards">
+                        <h3>Horiseon Bugfix Project</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="smaller-images">
+                <a target="_blank" href="https://jakebjackson.github.io/prework-study-guide/">
+                    <img src="" alt="" class=""/>
+                    <div class="work-desc-cards">
+                        <h3>Bootcamp Prework</h3>
+                        <p>HTML/CSS/JavaScript</p>
+                    </div>
+                </a>
+                <a target="_blank" href="">
+                    <img src="" alt="" class=""/>
+                    <div class="work-desc-cards">
+                        <h3>Blank</h3>
+                    </div>
+                </a>
+                <a target="_blank" href="">
+                    <img src="" alt="" class=""/>
+                    <div class="work-desc-cards">
+                        <h3>Blank</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contact-me">
+            <h2>Contact Me</h2>
+            <p>jakebjackson27@gmail.com</p>
+            <p>0400000000</p>
+            <a target="_blank" href="https://www.github.com/JakebJackson">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/jakeb-jackson-3642a8291/">LinkedIn</a>
+        </div>
+
+        <div id="resume">
+            <h2>Resume</h2>
+
+        </div>
+    </div>
+</body>
+</html>
