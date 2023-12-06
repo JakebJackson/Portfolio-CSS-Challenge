@@ -13,8 +13,8 @@
 <body>
     <!-- Creating the title and navigation bar (header) for the page. -->
     <header>
-        <h1 class="float-left">Jakeb Jackson</h1>
-        <nav class="float-right">
+        <h1>Jakeb Jackson</h1>
+        <nav>
             <ul>
                 <li>
                     <a href="#about-me">About Me</a>
@@ -37,8 +37,14 @@
         <!-- These smaller divs are for the content, I put them into seperate child divs so that I can give the nav menu functionality and keep the CSS neat and organised -->
         <div id="about-me">
             <h2>About Me</h2>
-            <p>Hi! I'm Jakeb Jackson, an aspiring Web Developer who, at the time of writing, is going through the Monash University Web Development Bootcamp.</p>
-            <img src="./assets/images/Profile-Picture.jpg" alt="Image of myself at a garden in the phillipines" class="float-left"/>
+            <ul class="about-me-ul">
+                <li>
+                    <p>Hi! I'm Jakeb Jackson, an aspiring Web Developer who, at the time of writing, is going through the Monash University Web Development Bootcamp.</p>
+                </li>
+                <li>
+                    <img src="./assets/images/Profile-Picture.jpg" alt="Image of myself at a garden in the phillipines" class="float-left"/>
+                </li>
+            </ul>
         </div>
 
         <div id="work">
@@ -79,10 +85,21 @@
 
         <div id="contact-me">
             <h2>Contact Me</h2>
-            <p>jakebjackson27@gmail.com</p>
-            <p>0400000000</p>
-            <a target="_blank" href="https://www.github.com/JakebJackson">Github</a>
-            <a target="_blank" href="https://www.linkedin.com/in/jakeb-jackson-3642a8291/">LinkedIn</a>
+            <ul>
+                <li>
+                    <p>Email</p>
+                </li>
+                <li>
+                    <p>Phone</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.github.com/JakebJackson">Github</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/jakeb-jackson-3642a8291/">LinkedIn</a>
+                </li>
+            </ul>
+            <p>(Click to copy/open!)</p>
         </div>
 
         <div id="resume">
