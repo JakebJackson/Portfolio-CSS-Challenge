@@ -19,7 +19,7 @@ This website was a trial project, that was intended to resemble a developer port
 
 ## Mock-Up
 Below is an image of the deployed application:
-[!Deployed portfolio website](./assets/images/portfolio-screenshot.png)
+![Deployed portfolio website](./assets/images/portfolio-screenshot.png)
 
 ## Deployment
-This website has been deployed and can be viewed [here](https://jakebjackson.github.io/Portfolio-CSS-Project/).
+This website has been deployed and can be viewed [here](https://jakebjackson.github.io/Portfolio-CSS-Challenge/).
