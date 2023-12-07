@@ -13,10 +13,13 @@
 <body>
     <!-- Creating the title and navigation bar (header) for the page. -->
     <header>
+        <!-- Title -->
         <h1>Jakeb Jackson</h1>
+        <!-- Nav menu -->
         <nav>
             <ul>
                 <li>
+                    <!-- Sends the user to the selected section of the page. -->
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
@@ -26,85 +29,88 @@
                     <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a href="./assets/files/Jakeb-Jackson-Resume.docx">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- This div is used to cointain all the content of the page and various sections. -->
+        <!-- This div is used to cointain all the content of the page and various sections. -->
     <div class="page-content">
         <!-- These smaller divs are for the content, I put them into seperate child divs so that I can give the nav menu functionality and keep the CSS neat and organised -->
         <div id="about-me">
             <h2>About Me</h2>
-            <ul class="about-me-ul">
-                <li>
-                    <p>Hi! I'm Jakeb Jackson, an aspiring Web Developer who, at the time of writing, is going through the Monash University Web Development Bootcamp.</p>
-                </li>
-                <li>
-                    <img src="./assets/images/Profile-Picture.jpg" alt="Image of myself at a garden in the phillipines" class="float-left"/>
-                </li>
-            </ul>
+            <section>
+                <img src="./assets/images/Profile-Picture.jpg" alt="Image of myself at a garden in the phillipines"/>
+                <div>
+                    <p>Hello and welcome to my portfolio! I'm Jakeb Jackson, a former ADF Infantry Soldier and an aspiring Web Developer. I am currently attending the Web Development course offered by Monah University. I enjoy developing weird and often random skills in my spare time, but my core hobbies have always been strength training, reading/audiobooks and video games.</p>
+                </div>
+            </section>
         </div>
 
         <div id="work">
             <h2>Work</h2>
-            <div class="main-image">
-                <a target="_blank" href="https://jakebjackson.github.io/Horiseon-Bugfix-Project/">
-                    <img src="./assets/images/" alt="Screenshot of Github Repository with link" class=""/>
-                    <!-- Using these divs inside of the anchor tag so that I can create call cards with a name and description on the images of my projects.-->
-                    <div class="work-desc-cards">
-                        <h3>Horiseon Bugfix Project</h3>
-                        <p>HTML/CSS</p>
-                    </div>
-                </a>
-            </div>
+            <!-- Section for the  -->
+            <section>
+                <section class="main-img work-img">
+                    <a target="_blank" href="https://jakebjackson.github.io/Horiseon-Bugfix-Project/">
+                        <img src="./assets/images/horiseon-screenshot.png" alt="Screenshot of deployed Horiseon project"/>
+                        <!-- Using these divs inside of the anchor tag so that I can create call cards with a name and description on the images of my projects.-->
+                        <div class="desc-card-large">
+                            <h3>Horiseon Bugfix Project</h3>
+                            <p>HTML CSS</p>
+                        </div>
+                    </a>
+                </section>
 
-            <div class="smaller-images">
-                <a target="_blank" href="https://jakebjackson.github.io/prework-study-guide/">
-                    <img src="" alt="" class=""/>
-                    <div class="work-desc-cards">
-                        <h3>Bootcamp Prework</h3>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </a>
-                <a target="_blank" href="">
-                    <img src="" alt="" class=""/>
-                    <div class="work-desc-cards">
-                        <h3>Blank</h3>
-                    </div>
-                </a>
-                <a target="_blank" href="">
-                    <img src="" alt="" class=""/>
-                    <div class="work-desc-cards">
-                        <h3>Blank</h3>
-                    </div>
-                </a>
-            </div>
+                    <!-- Created seperate div for the smaller images in the work section -->
+                <div class="smaller-img work-img" >
+                    <!-- using target="_blank" to send the opened anchor to a new tab for the users convenience -->
+                     <a target="_blank" href="https://jakebjackson.github.io/prework-study-guide/">
+                        <img src="./assets/images/prework-screenshot.png" alt="Screenshot of deployed prework project"/>
+                        <!-- Description cards for the work anchor/imgs -->
+                        <div class="desc-cards">
+                            <h3>Bootcamp Prework</h3>
+                            <p>HTML CSS JavaScript</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/JakebJackson">
+                        <img src="./assets/images/github-user-screenshot.png" alt="Screenshot of my github user profile"/>
+                        <div class="desc-cards">
+                            <h3>GitHub Profile</h3>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://leetcode.com/JakeJacko/">
+                        <img src="./assets/images/leetcode-screenshot.png" alt="blank"/>
+                        <div class="desc-cards">
+                            <h3>LeetCode Profile</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
         </div>
 
+        <!-- Contact me section putting the content into an unorg list for CSS convenience. -->
         <div id="contact-me">
             <h2>Contact Me</h2>
             <ul>
-                <li>
+                <li class="email-hover">
+                    <img src="./assets/images/gmail-logo.png" alt="email icon" class="img-icon">
                     <p>Email</p>
                 </li>
-                <li>
+                <li class="phone-hover">
+                    <img src="./assets/images/phone-icon.png" alt="phone icon" class="img-icon">
                     <p>Phone</p>
                 </li>
                 <li>
+                    <img src="./assets/images/Github-Icon.png" alt="Github logo" class="img-icon">
                     <a target="_blank" href="https://www.github.com/JakebJackson">Github</a>
                 </li>
                 <li>
+                    <img src="./assets/images/linkedIn-logo.png" alt="LinkedIn icon" class="img-icon">
                     <a target="_blank" href="https://www.linkedin.com/in/jakeb-jackson-3642a8291/">LinkedIn</a>
                 </li>
             </ul>
-            <p>(Click to copy/open!)</p>
-        </div>
-
-        <div id="resume">
-            <h2>Resume</h2>
-
         </div>
     </div>
 </body>
